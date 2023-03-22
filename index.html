@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Kundan</title>
+    <script src="https://use.fontawesome.com/7dcf2463a7.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="icon">
+            <div class="logo">
+                <h3>Logo</h3>
+            </div>
+            <div class="side-icon" onclick="toggleNav()">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </div>
+        </div>
+        <ul class="nav-item visible">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Login</li>
+        </ul>
+
+    </header>
+</body>
+
+<!-- ==================JavaScript========================= -->
+
+<script>
+$(document).ready(
+    $('.side-icon').click(()=>{
+        $('.nav-item').toggleClass('visible');
+        $('header').toggleClass('height');
+    })
+
+)
+</script>
+
+</html>
